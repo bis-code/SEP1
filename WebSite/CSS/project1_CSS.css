@@ -1,0 +1,53 @@
+h3 { /* aligns text to the center */
+    text-align: center;
+    
+}
+
+.top-img-section { /* manages top picture with title */
+    background-image: url(../Pictures/2581470.jpg);
+    text-align: right;
+    vertical-align: center;
+    height: 100px;
+    padding: 20px;
+}
+
+
+
+.date { /* this makes that dates are not completly in the corner of the website and makes it easier to read */
+    padding: 1%;
+}
+
+.table-project1 { /* fixes table to desired size and margin slides it a little away from the corner to make it easier to read */
+    width: 40%;
+    margin: 4%;
+}
+
+
+
+table, th, td { 
+    border: 2px solid grey;
+    border-collapse: collapse;
+}
+
+.table-top { /* this makes a table top a little more noticeable */
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.status { /* makes it visible that the part is not started */
+    color: red;
+}
+
+
+#non-functioal { /* puts table to the right */ 
+   float: right;
+}
+
+#functional { /* puts table to the left */ 
+   float: left;
+}
+
+.jumbotron {
+    background-image: url("../Pictures/banner.jpg");
+    background-size: cover;
+    text-align: right;
+}

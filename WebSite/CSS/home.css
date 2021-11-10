@@ -1,0 +1,154 @@
+.banner img /* positioning banner image */
+{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    left: 0px;
+    top: 50px;
+    right: 0px;
+
+}
+/* positioning and setting font for banner title */
+.bannertitle
+{
+    position: absolute;
+    margin-top: 250px;
+    font-family: Actor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    left: 20%;
+    color: #767676;
+}
+.bannertitle p /* changing text size for banner title text */
+{
+    font-size: 20px;
+}
+/* positioning and setting font for second banner title */
+.bannertitle2 {
+    position: absolute;
+    left: 950px;
+    top: 129px;
+
+    font-family: Actor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    color: #161616;
+}
+/* positioning body text */
+.text
+{
+    margin-top: 750px;
+    margin-bottom: 500px;
+}
+.description /* positioning description */
+{
+    margin-top: 20px;
+}
+
+.description h3 /* setting patameters and positioning description title */
+{
+    position: absolute;
+    width: 596px;
+    height: 48px;
+    left: 50%;
+    font-size: 40px;
+}
+.my-container p /* setting patameters and positioning description text */
+{
+    font-size: 22px;
+}
+.opening img /* positioning opening hours image */
+{
+    margin-top: 300px;
+    margin-left: 30%;
+}
+.developers /* positioning developers section */
+{
+    list-style: none;
+}
+/* positioning each developer container and setting parameters for it and text inside of it */
+.container1 
+{
+    width: 300px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+.container1 li
+{
+    position: absolute;
+    left:50px;
+    top: 50px;
+    font-size: 22px;
+    color: #494949;
+}
+.container2
+{
+    width: 300px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+.container2 li
+{
+    position: absolute;
+    left:50px;
+    top: 50px;
+    font-size: 22px;
+    color: #494949;
+}
+.container3
+{
+    width: 300px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+.container3 li
+{
+    position: absolute;
+    left:50px;
+    top: 50px;
+    font-size: 22px;
+    color: #494949;
+}
+.container4
+{
+    width: 300px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+.container4 li
+{
+    position: absolute;
+    left:50px;
+    top: 50px;
+    font-size: 22px;
+    color: #494949;
+}
+.developers .card
+{
+    width: 250px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+}
+.developers .card li
+{
+    position: absolute;
+    left:50px;
+    top: 50px;
+    font-size: 22px;
+    color: #494949;
+}

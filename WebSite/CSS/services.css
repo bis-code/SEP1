@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+#umbrellaimg {
+    width:80px;
+    height: 80px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+
+
+
+#likeimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+}
+
+#bugimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+}
+
+#landingimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+}
+
+#dashboardimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+}
+
+#elegantdesignimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+}
+
+#iconsimg {
+    width: 80px;
+}
+
+.jumbotron {
+  background-image: url("../Pictures/banner.png");
+  background-size: cover;
+}
+
+.navbar{
+    padding: .8rem;
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+footer{
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    
+}
+
+
+/*---Media Queries --*/
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
+
+.doing {
+    background-color: #9999;
+}

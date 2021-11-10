@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="543.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProjectListViewController">
+   <children>
+      <TableView fx:id="projectListTable" layoutX="20.0" layoutY="61.0" prefHeight="402.0" prefWidth="559.0">
+        <columns>
+          <TableColumn fx:id="projectColumn" prefWidth="255.0" text="Projects List" />
+          <TableColumn fx:id="deadLineColumn" prefWidth="88.0" text="Deadline" />
+            <TableColumn fx:id="statusColumn" minWidth="5.0" prefWidth="62.0" text="Status" />
+            <TableColumn fx:id="membersColumn" prefWidth="78.0" text="Members" />
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="669.0" layoutY="24.0" mnemonicParsing="false" onAction="#onResetButton" text="Reset" />
+      <Label layoutX="20.0" layoutY="26.0" prefHeight="21.0" prefWidth="116.0" text="SEP1 1Y PROJECT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="20.0" layoutY="465.0" text="ErrorLabel" textFill="RED" />
+      <TextField fx:id="searchProject" layoutX="456.0" layoutY="24.0" promptText="Search for Project" />
+      <Button layoutX="589.0" layoutY="93.0" mnemonicParsing="false" onAction="#onAddProject" prefHeight="39.0" prefWidth="116.0" text="Add Project">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="589.0" layoutY="144.0" mnemonicParsing="false" onAction="#onRemoveProject" prefHeight="39.0" prefWidth="116.0" style="-fx-border-color: #e60909; -fx-border-width: 0px 0px 2px 0px;" text="Remove Project" />
+      <Button layoutX="589.0" layoutY="196.0" mnemonicParsing="false" onAction="#onDetailsProject" prefHeight="39.0" prefWidth="116.0" text=" Requirements">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="653.0" layoutY="444.0" mnemonicParsing="false" onAction="#onQuit" prefHeight="21.0" prefWidth="65.0" text="Quit">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="589.0" layoutY="248.0" mnemonicParsing="false" onAction="#onCustomizeProject" prefHeight="39.0" prefWidth="116.0" text="Customize">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="611.0" layoutY="24.0" mnemonicParsing="false" onAction="#onSearchButton" text="Search" />
+   </children>
+</AnchorPane>

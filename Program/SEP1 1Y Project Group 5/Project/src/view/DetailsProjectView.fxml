@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="639.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DetailsProjectViewController">
+   <children>
+      <TableView fx:id="requirementListTable" layoutX="20.0" layoutY="61.0" prefHeight="502.0" prefWidth="710.0">
+        <columns>
+          <TableColumn fx:id="requirementColumn" prefWidth="204.8000144958496" text="Requirements" />
+          <TableColumn fx:id="statusColumn" prefWidth="66.0" text="Status" />
+            <TableColumn fx:id="timeSpentColumn" minWidth="5.0" prefWidth="75.0" text="Time spent" />
+            <TableColumn fx:id="estimatedTime" prefWidth="92.0" text="Estimated Time" />
+            <TableColumn fx:id="unfinishedNumberOfTaskColumn" prefWidth="114.0" text="Unfinished Task" />
+            <TableColumn fx:id="responsibleTeamMember" prefWidth="101.0" text="R.M." />
+            <TableColumn fx:id="idColumn" prefWidth="56.0" text="ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="20.0" layoutY="24.0" prefHeight="25.0" prefWidth="116.0" text="Details of Project:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="projectName" layoutX="138.0" layoutY="26.0" prefHeight="6.0" prefWidth="52.0" text="Project">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="20.0" layoutY="563.0" text="ErrorLabel" textFill="RED" />
+      <Button layoutX="664.0" layoutY="24.0" mnemonicParsing="false" onAction="#onSearchButton" text="Search" />
+      <TextField fx:id="searchRequirement" layoutX="509.0" layoutY="24.0" promptText="Search for Requirement" />
+      <Button layoutX="746.0" layoutY="95.0" mnemonicParsing="false" onAction="#onAddRequirement" prefHeight="39.0" prefWidth="116.0" text="Add Requirement" />
+      <Button layoutX="746.0" layoutY="146.0" mnemonicParsing="false" onAction="#onRemoveRequirement" prefHeight="39.0" prefWidth="116.0" style="-fx-border-color: #e60909; -fx-border-width: 0px 0px 2px 0px;" text="Remove Requirement">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="746.0" layoutY="198.0" mnemonicParsing="false" onAction="#onDetailsRequirement" prefHeight="39.0" prefWidth="116.0" text="Tasks">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="810.0" layoutY="446.0" mnemonicParsing="false" onAction="#onBackButton" prefHeight="21.0" prefWidth="65.0" text="Back">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="746.0" layoutY="248.0" mnemonicParsing="false" onAction="#onCustomizeTask" prefHeight="39.0" prefWidth="116.0" text="Customize">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="746.0" layoutY="300.0" mnemonicParsing="false" onAction="#onAddResponsibleMember" prefHeight="39.0" prefWidth="116.0" text="Add R.M.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="746.0" layoutY="352.0" mnemonicParsing="false" onAction="#onDescriptionRequirement" prefHeight="39.0" prefWidth="116.0" text="Description">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="580.0" layoutY="563.0" text="R.M. = Responsible Member" />
+      <Button layoutX="723.0" layoutY="24.0" mnemonicParsing="false" onAction="#onResetButton" text="Reset" />
+   </children>
+</AnchorPane>

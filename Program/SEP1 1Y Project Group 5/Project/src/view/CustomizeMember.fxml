@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CustomizeMemberViewController">
+    <children>
+        <Label layoutX="14.0" layoutY="28.0" prefHeight="75.0" prefWidth="109.0" text="Actual Name">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="taskNameLabel" layoutX="123.0" layoutY="52.0" prefHeight="27.0" prefWidth="116.0" text="Label">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="errorLabel" layoutX="21.0" layoutY="350.0" prefHeight="27.0" prefWidth="63.0" text="ErrorLabel" textFill="RED">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="318.0" layoutY="52.0" prefHeight="37.0" prefWidth="63.0" text="Name">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="memberName" layoutX="381.0" layoutY="58.0" promptText="Member name" />
+        <Label layoutX="318.0" layoutY="103.0" prefHeight="37.0" prefWidth="63.0" text="Role">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="memberRoles" layoutX="382.0" layoutY="109.0" prefWidth="150.0" />
+        <Button layoutX="382.0" layoutY="168.0" mnemonicParsing="false" onAction="#onChangeButton" prefHeight="37.0" prefWidth="70.0" text="Change" />
+        <Button layoutX="476.0" layoutY="168.0" mnemonicParsing="false" onAction="#onCancelButton" prefHeight="37.0" prefWidth="63.0" text="Cancel" />
+        <Label layoutX="207.0" layoutY="15.0" prefHeight="27.0" prefWidth="165.0" text="Customize Member">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

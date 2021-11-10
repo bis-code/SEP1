@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CustomizeRequirementsViewController">
+   <center>
+      <AnchorPane prefHeight="325.0" prefWidth="481.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="83.0" layoutY="27.0" text="Customize">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="57.0" style="-fx-border-color: #00ff44; -fx-border-width: 0px 0px 2px 0px;" text="Requirement:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="requirementName" layoutX="290.0" layoutY="30.0" promptText="Requirement Name" />
+            <TextField fx:id="requirementDescription" layoutX="290.0" layoutY="73.0" promptText="Requirement Description" />
+            <Label fx:id="errorLabel" layoutX="288.0" layoutY="161.0" text="ErrorLabel" textFill="RED" />
+            <Button layoutX="344.0" layoutY="117.0" mnemonicParsing="false" onAction="#onChangeButton" text="Change" />
+            <Button layoutX="413.0" layoutY="187.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+            <Label fx:id="idRequirement" layoutX="181.0" layoutY="57.0" style="-fx-border-color: #00ff44; -fx-border-width: 0px 0px 2px 0px;" text="id">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

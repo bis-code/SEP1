@@ -1,0 +1,41 @@
+.top-img-section { /* this css class is created to manage picture on the top to look nice */
+    background-image: url(../Pictures/2581470.jpg);
+    text-align: right;
+    vertical-align: center;
+    height: 100px;
+    padding: 20px;
+}
+.top-body { /* aligns text to the center as a main topic of the page*/
+    text-align: center;
+}
+
+.project1 { /* this is for creating nice boxes to separate projects */
+    border: 2px solid grey;
+    margin: 1%;
+    color: black;
+    text-decoration: none;
+}
+
+h3, p, .project1{ 
+    text-align: left;
+    padding: 7px;
+}
+
+#not-created { /* this makes your cursor block sign */
+    cursor: not-allowed;
+}
+
+/*.well{
+    margin: 10px;
+}
+*/
+
+.my-col{
+    border: 2px black;
+}
+
+.jumbotron {
+    background-image: url("../Pictures/banner.jpg");
+    background-size: cover;
+    text-align: right;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TaskMembersViewController">
+   <left>
+      <AnchorPane prefHeight="451.0" prefWidth="688.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="memberListTable" layoutX="51.0" layoutY="81.0" prefHeight="141.0" prefWidth="327.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" minWidth="0.0" prefWidth="160.0" text="Name" />
+                  <TableColumn fx:id="roleColumn" prefWidth="166.0" text="Role" />
+              </columns>
+            </TableView>
+            <Label layoutX="51.0" layoutY="37.0" prefHeight="26.0" prefWidth="140.0" text="Members for TASK ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameTask" layoutX="191.0" layoutY="37.0" prefHeight="26.0" prefWidth="71.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchName" layoutX="324.0" layoutY="38.0" prefHeight="25.0" prefWidth="107.0" promptText="Search By Name" />
+            <Button layoutX="440.0" layoutY="38.0" mnemonicParsing="false" onAction="#onSearchButton" text="Search" />
+            <Button layoutX="500.0" layoutY="38.0" mnemonicParsing="false" onAction="#onResetButton" text="Reset" />
+            <Button layoutX="407.0" layoutY="89.0" mnemonicParsing="false" onAction="#onAddButton" text="Add">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="407.0" layoutY="130.0" mnemonicParsing="false" onAction="#onRemoveButton" style="-fx-border-color: #e60909; -fx-border-width: 0px 0px 2px 0px;" text="Remove">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="502.0" layoutY="235.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+            <Label fx:id="errorLabel" layoutX="51.0" layoutY="247.0" text="ErrorLabel" textFill="RED" />
+            <Button layoutX="407.0" layoutY="171.0" mnemonicParsing="false" onAction="#onCustomizeButton" text="Customize">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
